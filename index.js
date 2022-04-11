@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 
 const url = "https://explorer.solana.com/";
 
-const interval_in_sec = 60
+const interval_in_sec = 5
 
 async function getTPS() {
   let tps = "...";

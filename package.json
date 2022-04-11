@@ -6,9 +6,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  {
   "author": "OtiMby",
-  },
   "dependencies": {
     "discord.js": "^12.5.3",
     "dotenv": "^9.0.2",

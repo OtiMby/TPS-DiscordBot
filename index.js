@@ -6,8 +6,9 @@ const bot = new Discord.Client();
 const url = "https://explorer.solana.com/";
 
 const interval_in_sec = 5
+const PORT = process.env.PORT || 3000;
 
-async function getTPS() {
+app.listen(PORT, async function getTPS() {
   let tps = "...";
   let emoji_status = "";
 
@@ -41,7 +42,7 @@ async function getTPS() {
     console.error(e);
     bot.user.setActivity(String(tps + " TPS " + emoji_status + emoji_status));
   }
-};
+});
 
 bot.on('ready', () => {
   setInterval(getTPS, interval_in_sec * 1000);
